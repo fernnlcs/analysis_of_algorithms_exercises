@@ -1,5 +1,5 @@
-import 'package:analysis_of_algorithms_exercises/exercise_1/item.dart';
-import 'package:analysis_of_algorithms_exercises/exercise_1/knapsack.dart';
+import 'package:analysis_of_algorithms_exercises/exercise_1/question_1/item.dart';
+import 'package:analysis_of_algorithms_exercises/exercise_1/question_1/knapsack.dart';
 
 void main(List<String> args) {
   final knapsack = Knapsack();

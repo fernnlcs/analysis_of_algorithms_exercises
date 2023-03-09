@@ -1,5 +1,5 @@
-import 'package:analysis_of_algorithms_exercises/exercise_2/pair.dart';
-import 'package:analysis_of_algorithms_exercises/exercise_2/point.dart';
+import 'package:analysis_of_algorithms_exercises/exercise_1/question_2/pair.dart';
+import 'package:analysis_of_algorithms_exercises/exercise_1/question_2/point.dart';
 
 void main(List<String> args) {
   var distances = <double, List<Pair>>{};

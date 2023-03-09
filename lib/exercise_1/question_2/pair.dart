@@ -1,7 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:math';
 
-import 'package:analysis_of_algorithms_exercises/exercise_2/point.dart';
+import 'package:analysis_of_algorithms_exercises/exercise_1/question_2/point.dart';
 
 class Pair {
   final Point a;
