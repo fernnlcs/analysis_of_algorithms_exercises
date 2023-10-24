@@ -3,7 +3,8 @@ import 'dart:convert';
 import 'dart:io';
 
 void main() {
-  final amountOfCards =
+  // Se usar o Dartpad, atribua a entrada hardcoded a amoutOfCards
+  final int amountOfCards =
       int.tryParse(stdin.readLineSync(encoding: utf8) ?? '0') ?? 0;
   final cards = List.generate(amountOfCards, (index) => index);
 
@@ -25,11 +26,13 @@ void shuffle(List<int> cards) {
   final cardsPerPart = amountOfCards ~/ amountOfParts;
   final parts = <Queue<int>>[];
 
+  // Divide parts
   for (var i = 0; i < amountOfParts; i++) {
     parts
         .add(Queue.of(cards.sublist(i * cardsPerPart, (i + 1) * cardsPerPart)));
   }
 
+  // Shuffle
   for (var i = 0; i < amountOfCards; i++) {
     cards[i] = parts[i % amountOfParts].removeFirst();
   }
